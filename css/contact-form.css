@@ -325,3 +325,31 @@ input[type="checkbox"]:checked::after {
     width: 100%;
   }
 }
+
+.input-wrapper input[type="url"],
+.input-wrapper input[type="tel"] {
+  border: none;
+  outline: none;
+  font-family: 'Whyte', Arial, sans-serif;
+  font-size: 16px;
+  flex: 1;
+  padding: 5px 8px;
+  caret-color: #FF4438;
+}
+
+.input-wrapper.show-icon input[type="url"],
+.input-wrapper.show-icon input[type="tel"] {
+  padding: 5px 8px 5px 35px;
+}
+
+.visually-hidden-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.input-container.at-hide {
+  display: none;
+}
