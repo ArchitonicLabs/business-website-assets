@@ -35,8 +35,12 @@ body {
   width: 100%;
 }
 
-.flex-row .input-container {
-  flex: 1 1 0;
+.name-row {
+  flex-wrap: wrap;
+}
+
+.name-row .input-container {
+  flex: 1 1 280px;
   min-width: 0;
   width: auto;
 }
@@ -323,15 +327,11 @@ input[type="checkbox"]:checked::after {
 
 /* CHOICES */
 
-@media (max-width: 767px) {
+@media (max-width: 450px) {
   .flex-row{
     display: flex;
     flex-direction: column;
     gap:24px;
-    width: 100%;
-  }
-
-  .flex-row .input-container {
     width: 100%;
   }
 }
