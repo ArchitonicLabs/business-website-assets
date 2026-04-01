@@ -17,21 +17,21 @@
 /* General Reset */
 body {
   font-family:'Whyte', Arial, sans-serif;
-  background-color: #121212;
+  background-color: #121212; /* Dark background */
   color: white;
   margin: 20px;
 }
 
-.form-container {
+.form-container{
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap:24px;
 }
 
-.flex-row {
+.flex-row{
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap:24px;
   width: 100%;
 }
 
@@ -41,14 +41,14 @@ body {
   width: auto;
 }
 
-a {
+a{
   color: #FF4438;
   text-decoration: none;
 }
 
-form {
+form{
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   gap: 24px;
 }
 
@@ -60,13 +60,13 @@ form {
   color: white;
 }
 
-.error-message {
+.error-message{
   margin: 0;
   font-size: 14px;
   color: #FF4438;
 }
 
-.at-hide {
+.at-hide{
   display: none;
 }
 
@@ -83,7 +83,7 @@ label {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px; /* Inner padding */
   color: black;
   position: relative;
 }
@@ -94,7 +94,7 @@ label {
   font-family: 'Whyte', Arial, sans-serif;
   font-size: 16px;
   flex: 1;
-  padding: 5px 8px 5px 8px;
+  padding: 5px 8px 5px 8px; /* Space for the icon on the left */
   caret-color: #FF4438;
 }
 
@@ -104,40 +104,43 @@ label {
   font-family: 'Whyte', Arial, sans-serif;
   font-size: 16px;
   flex: 1;
-  padding: 5px 8px 5px 35px;
+  padding: 5px 8px 5px 35px; /* Space for the icon on the left */
   caret-color: #FF4438;
 }
 
 .input-wrapper:focus-within {
   outline: none;
-  border: 1px solid #FF4438;
-  box-shadow: 0 0 0 3px #FFE1DF;
+  border: 1px solid #FF4438; /* Inside border (red) */
+  box-shadow: 0 0 0 3px #FFE1DF; /* Outside border (light red) */
 }
 
 .input-wrapper input::placeholder {
   color: #aaa;
 }
 
+/* Estilo base para el textarea */
 .textarea-styled {
   font-size: 16px;
   font-family: 'Whyte', Arial, Helvetica, sans-serif;
-  padding: 8px 12px;
+  padding: 8px 12px; /* Espaciado interno */
   border: 1px solid #ccc;
   border-radius: 16px;
   color: #1B1915;
   outline: none;
-  resize: vertical;
-  min-height: 100px;
-  width: 100%;
+  resize: vertical; /* Permite cambiar el tamaño verticalmente */
+  min-height: 100px; /* Altura mínima para el área de texto */
+  width:100%;
   caret-color: #FF4438;
 }
 
+/* Estado de foco */
 .textarea-styled:focus {
   outline: none;
-  border: 1px solid #FF4438;
-  box-shadow: 0 0 0 3px #FFE1DF;
+  border: 1px solid #FF4438; /* Inside border (red) */
+  box-shadow: 0 0 0 3px #FFE1DF; /* Outside border (light red) */
 }
 
+/* Icon styles */
 .icon {
   position: absolute;
   left: 10px;
@@ -148,7 +151,7 @@ label {
   justify-content: center;
 }
 
-.at-primary-button {
+.at-primary-button{
   display: inline-flex;
   height: 52px;
   width: auto;
@@ -156,29 +159,30 @@ label {
   padding: 12px 20px;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap:8px;
   color: white;
   font-family: 'Whyte', Arial, Helvetica, sans-serif;
   font-size: 18px;
   flex-shrink: 0;
   border-radius: 12px;
-  border: none;
+  border:none;
   background-color: #FF4438;
   box-shadow: 0px 1px 0px 0px rgba(37, 35, 32, 0.05), 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
   cursor: pointer;
   white-space: nowrap;
 }
 
-.at-primary-button:hover {
+.at-primary-button:hover{
   background-color: #C8180D;
 }
 
-.at-primary-button:active {
+.at-primary-button:active{
   border-radius: 12px;
   background: #A5180F;
   box-shadow: 0px 1px 0px 0px rgba(37, 35, 32, 0.05), 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
   font-size: 17px;
 }
+
 
 /* Select */
 .input-wrapper select {
@@ -187,7 +191,7 @@ label {
   background: transparent;
   font-family: 'Whyte', Arial, sans-serif;
   font-size: 16px;
-  height: 34px;
+  height:34px;
   color: black;
   width: 100%;
   appearance: none;
@@ -195,20 +199,21 @@ label {
   flex: 1;
 }
 
+
 .input-wrapper select option {
   color: black;
 }
 
 .input-wrapper select option:disabled {
-  color: #aaa;
+  color: #aaa; /* Color gris para la opción deshabilitada (como un placeholder) */
 }
 
 .input-wrapper:focus-within select {
-  color: black;
+  color: black; /* Asegura que el color del texto no cambie en focus */
 }
 
 .input-wrapper select::placeholder {
-  color: #aaa;
+  color: #aaa; /* No es soportado por select, pero lo dejo como referencia */
 }
 
 .input-wrapper select:focus {
@@ -224,33 +229,34 @@ label {
   display: flex;
   align-items: center;
   pointer-events: none;
-  color: #aaa;
+  color: #aaa;  
 }
 
 .input-wrapper:focus-within .chevron-icon {
-  color: #FF4438;
+  color: #FF4438; /* Cambia el color del chevron en focus */
 }
 
-.privacy-policy-input {
+.privacy-policy-input{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px;
+  gap:8px;
 }
 
 input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: #ffffff;
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  background-color: #ffffff; 
   border: 1px solid #ccc;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
+  width: 20px; 
+  height: 20px; 
+  border-radius: 4px; 
+  display: inline-block; 
+  position: relative; 
+  cursor: pointer; 
 }
+
 
 input[type="checkbox"]:checked::after {
   content: "";
@@ -258,16 +264,18 @@ input[type="checkbox"]:checked::after {
   width: 100%;
   height: 100%;
   background-size: cover;
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
+  border: none;
+  outline: none !important; 
+  box-shadow: none !important; 
+  border: none !important; 
   border-radius: 4px;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxOCAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeT0iMC4xNDE2MDIiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjIiIGZpbGw9IiNGRjQ0MzgiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC42ODY5IDQuNjQ2NDVDMTQuODgyMiA0Ljg0MTcxIDE0Ljg4MjIgNS4xNTgyOSAxNC42ODY5IDUuMzUzNTVMNy4zNTM1NiAxMi42ODY5QzcuMTU4MyAxMi44ODIxIDYuODQxNzEgMTIuODgyMSA2LjY0NjQ1IDEyLjY4NjlMMy4zMTMxMiA5LjM1MzU1QzMuMTE3ODYgOS4xNTgyOSAzLjExNzg2IDguODQxNzEgMy4zMTMxMiA4LjY0NjQ1QzMuNTA4MzggOC40NTExOCAzLjgyNDk2IDguNDUxMTggNC4wMjAyMyA4LjY0NjQ1TDcgMTEuNjI2MkwxMy45Nzk4IDQuNjQ2NDVDMTQuMTc1IDQuNDUxMTggMTQuNDkxNiA0LjQ1MTE4IDE0LjY4NjkgNC42NDY0NVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxOCAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeT0iMC4xNDE2MDIiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjIiIGZpbGw9IiNGRjQ0MzgiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC42ODY5IDQuNjQ2NDVDMTQuODgyMiA0Ljg0MTcxIDE0Ljg4MjIgNS4xNTgyOSAxNC42ODY5IDUuMzUzNTVMNy4zNTM1NiAxMi42ODY5QzcuMTU4MyAxMi44ODIxIDYuODQxNzEgMTIuODgyMSA2LjY0NjQ1IDEyLjY4NjlMMy4zMTMxMiA5LjM1MzU1QzMuMTE3ODYgOS4xNTgyOSAzLjExNzg2IDguODQxNzEgMy4zMTMxMiA4LjY0NjQ1QzMuNTA4MzggOC40NTExOCAzLjgyNDk2 IDguNDUxMTggNC4wMjAyMyA4LjY0NjQ1TDcgMTEuNjI2MkwxMy45Nzk4IDQuNjQ2NDVDMTQuMTc1IDQuNDUxMTggMTQuNDkxNiA0LjQ1MTE4IDE0LjY4NjkgNC42NDY0NVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=);
 }
 
-.afd-checkbox__label {
-  padding-bottom: 0px !important;
+.afd-checkbox__label{
+  padding-bottom:0px !important;
 }
+
 
 /* CHOICES */
 
@@ -278,7 +286,6 @@ input[type="checkbox"]:checked::after {
 .input-wrapper:has(.choices) {
   padding: 0;
 }
-
 .choices[data-type*=select-one] .choices__inner {
   padding: 10px;
   border: 0;
@@ -316,6 +323,19 @@ input[type="checkbox"]:checked::after {
 
 /* CHOICES */
 
+@media (max-width: 767px) {
+  .flex-row{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    width: 100%;
+  }
+
+  .flex-row .input-container {
+    width: 100%;
+  }
+}
+
 .input-wrapper input[type="url"],
 .input-wrapper input[type="tel"] {
   border: none;
@@ -342,16 +362,4 @@ input[type="checkbox"]:checked::after {
 
 .input-container.at-hide {
   display: none;
-}
-
-@media (max-width: 767px) {
-  .flex-row {
-    flex-direction: column;
-    gap: 24px;
-    width: 100%;
-  }
-
-  .flex-row .input-container {
-    width: 100%;
-  }
 }
