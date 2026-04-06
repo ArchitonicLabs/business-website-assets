@@ -1,28 +1,5 @@
-@font-face {
-  font-family: Whyte;
-  src: url("../fonts/ABCWhyte-Regular.woff");
-  src: url("../fonts/ABCWhyte-Regular.woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Whyte;
-  src: url("../fonts/ABCWhyte-Medium.woff");
-  src: url("../fonts/ABCWhyte-Medium.woff2");
-  font-weight: 600;
-  font-style: normal;
-}
-
-/* General Reset */
-body {
-  font-family:'Whyte', Arial, sans-serif;
-  background-color: #121212; /* Dark background */
-  color: white;
-  margin: 20px;
-}
-
 .form-container{
+  font-family: inherit;
   display: flex;
   flex-direction: column;
   gap:24px;
@@ -75,7 +52,7 @@ form{
 }
 
 label {
-  font-family: 'Whyte', Arial, sans-serif;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
@@ -95,7 +72,7 @@ label {
 .input-wrapper input {
   border: none;
   outline: none;
-  font-family: 'Whyte', Arial, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   flex: 1;
   padding: 5px 8px 5px 8px; /* Space for the icon on the left */
@@ -105,7 +82,7 @@ label {
 .input-wrapper.show-icon input {
   border: none;
   outline: none;
-  font-family: 'Whyte', Arial, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   flex: 1;
   padding: 5px 8px 5px 35px; /* Space for the icon on the left */
@@ -125,7 +102,7 @@ label {
 /* Estilo base para el textarea */
 .textarea-styled {
   font-size: 16px;
-  font-family: 'Whyte', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   padding: 8px 12px; /* Espaciado interno */
   border: 1px solid #ccc;
   border-radius: 16px;
@@ -165,7 +142,7 @@ label {
   align-items: center;
   gap:8px;
   color: white;
-  font-family: 'Whyte', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 18px;
   flex-shrink: 0;
   border-radius: 12px;
@@ -193,7 +170,7 @@ label {
   border: none;
   outline: none;
   background: transparent;
-  font-family: 'Whyte', Arial, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   height:34px;
   color: black;
@@ -339,7 +316,7 @@ input[type="checkbox"]:checked::after {
 .input-wrapper input[type="tel"] {
   border: none;
   outline: none;
-  font-family: 'Whyte', Arial, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   flex: 1;
   padding: 5px 8px;
